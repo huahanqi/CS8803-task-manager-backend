@@ -1,11 +1,6 @@
 #### Project Setup
 
-In order to spin up the project, in the root create .env with these two variables, with your own values.
-
-MONGO_URI
-JWT_SECRET
-
-After that run this command
+Run this command to start running our backend server on localserver (default port 8080)
 
 ```bash
 npm install && npm start
@@ -23,3 +18,5 @@ Swagger UI
       required: true
       description: the task id
 ```
+
+You can go to http://localhost:8080/api-docs/ (assuming you are running on port 8080) to look at APIs documentation
