@@ -1,10 +1,10 @@
 openapi: 3.0.0
 info:
-  title: Jobs API
+  title: Tasks API
   contact: {}
-  version: '1.0'
+  version: "1.0"
 servers:
-  - url: https://jobs-api-06.herokuapp.com/api/v1
+  - url: https://localhost:8080/api/v1
     variables: {}
 paths:
   /auth/register:
@@ -15,19 +15,19 @@ paths:
       operationId: RegisterUser
       parameters: []
       requestBody:
-        description: ''
+        description: ""
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/RegisterUserRequest'
+              $ref: "#/components/schemas/RegisterUserRequest"
             example:
               name: bob
               email: bob@gmail.com
               password: secret
         required: true
       responses:
-        '200':
-          description: ''
+        "200":
+          description: ""
           headers: {}
       deprecated: false
       security: []
@@ -39,104 +39,104 @@ paths:
       operationId: LoginUser
       parameters: []
       requestBody:
-        description: ''
+        description: ""
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/LoginUserRequest'
+              $ref: "#/components/schemas/LoginUserRequest"
             example:
               email: susan@gmail.com
               password: secret
         required: true
       responses:
-        '200':
-          description: ''
+        "200":
+          description: ""
           headers: {}
       deprecated: false
       security: []
-  /jobs:
+  /tasks:
     post:
       tags:
-        - Jobs
-      summary: Create Job
-      operationId: CreateJob
+        - Tasks
+      summary: Create Task
+      operationId: CreateTask
       parameters: []
       requestBody:
-        description: ''
+        description: ""
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/CreateJobRequest'
+              $ref: "#/components/schemas/CreateTaskRequest"
             example:
               company: google
               position: front-end developer
         required: true
       responses:
-        '200':
-          description: ''
+        "200":
+          description: ""
           headers: {}
       deprecated: false
     get:
       tags:
-        - Jobs
-      summary: Get All Jobs
-      operationId: GetAllJobs
+        - Tasks
+      summary: Get All Tasks
+      operationId: GetAllTasks
       parameters: []
       responses:
-        '200':
-          description: ''
+        "200":
+          description: ""
           headers: {}
       deprecated: false
-  /jobs/{id}:
+  /tasks/{id}:
     parameters:
       - in: path
         name: id
         schema:
           type: string
         required: true
-        description: The job ID
+        description: The task ID
     get:
       tags:
-        - Jobs
-      summary: Get Single Job
-      operationId: GetSingleJob
+        - Tasks
+      summary: Get Single Task
+      operationId: GetSingleTask
       parameters: []
       responses:
-        '200':
-          description: ''
+        "200":
+          description: ""
           headers: {}
       deprecated: false
 
     patch:
       tags:
-        - Jobs
-      summary: Update Job
-      operationId: UpdateJob
+        - Tasks
+      summary: Update Task
+      operationId: UpdateTask
       parameters: []
       requestBody:
-        description: ''
+        description: ""
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/UpdateJobRequest'
+              $ref: "#/components/schemas/UpdateTaskRequest"
             example:
               company: random
               position: intern
         required: true
       responses:
-        '200':
-          description: ''
+        "200":
+          description: ""
           headers: {}
       deprecated: false
     delete:
       tags:
-        - Jobs
-      summary: Delete Job
-      operationId: DeleteJob
+        - Tasks
+      summary: Delete Task
+      operationId: DeleteTask
       parameters: []
       responses:
-        '200':
-          description: ''
+        "200":
+          description: ""
           headers: {}
       deprecated: false
 components:
@@ -173,8 +173,8 @@ components:
       example:
         email: susan@gmail.com
         password: secret
-    CreateJobRequest:
-      title: CreateJobRequest
+    CreateTaskRequest:
+      title: CreateTaskRequest
       required:
         - company
         - position
@@ -187,8 +187,8 @@ components:
       example:
         company: google
         position: front-end developer
-    UpdateJobRequest:
-      title: UpdateJobRequest
+    UpdateTaskRequest:
+      title: UpdateTaskRequest
       required:
         - company
         - position
@@ -209,6 +209,6 @@ security:
   - httpBearer: []
 tags:
   - name: Auth
-    description: ''
-  - name: Jobs
-    description: ''
+    description: ""
+  - name: Tasks
+    description: ""

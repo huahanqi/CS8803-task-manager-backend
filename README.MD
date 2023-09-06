@@ -14,12 +14,12 @@ npm install && npm start
 Swagger UI
 
 ```yaml
-/jobs/{id}:
+/tasks/{id}:
   parameters:
     - in: path
       name: id
       schema:
         type: string
       required: true
-      description: the job id
+      description: the task id
 ```
