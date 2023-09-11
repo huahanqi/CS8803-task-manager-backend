@@ -1,6 +1,13 @@
-#### Project Setup
+#### Project Introduction
+This is the backend server code for CS 8803 MAS programming project (To-Do-List app) see details here: https://github.com/aaronwork1205/CS_8803_MAS_fall2023/tree/main. <br> 
+We use node.js and express.js to build this backend api, and store all the user-generated data in MongoDB Atlas Database. This backend server responds to requests when users register new accounts and log-in with existing accounts. 
+It also responds to requests sent by users when they want to create, read, update, and delete tasks in their Todo List. 
 
-Run this command to start running our backend server on localserver (default port 8080)
+#### Project Setup
+This backend has been published to Heroku. The link is the following: https://tasks-api-8803-8645d4ff37f7.herokuapp.com/ <br>
+Go to https://tasks-api-8803-8645d4ff37f7.herokuapp.com/api-docs/ to see documents about all the api endpoints <br>
+
+You can also download the source code and run this command to test running our backend server on your local server (default port 8080)
 
 ```bash
 npm install && npm start
@@ -19,4 +26,4 @@ Swagger UI
       description: the task id
 ```
 
-You can go to http://localhost:8080/api-docs/ (assuming you are running on port 8080) to look at APIs documentation
+
