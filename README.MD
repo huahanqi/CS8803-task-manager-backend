@@ -27,7 +27,7 @@ Swagger UI
 
 ### Reference
 
-We learned a lot about how to built backend apis from this tutorial: https://github.com/john-smilga/node-express-course <br>
+We learned a lot about how to built backend apis from this tutorial: https://www.youtube.com/watch?v=qwfE7fSVaZM&t=34523s <br>
 and used some source code there as our starting point. Great thanks to John Smilga who created this tutorial for us! 
 
 
