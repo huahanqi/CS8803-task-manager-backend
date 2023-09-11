@@ -6,7 +6,6 @@ It also responds to requests sent by users when they want to create, read, updat
 #### Project Setup
 This backend has been published to Heroku. The link is the following: https://tasks-api-8803-8645d4ff37f7.herokuapp.com/ <br>
 Go to https://tasks-api-8803-8645d4ff37f7.herokuapp.com/api-docs/ to see documents about all the api endpoints <br>
-
 You can also download the source code and run this command to test running our backend server on your local server (default port 8080)
 
 ```bash
